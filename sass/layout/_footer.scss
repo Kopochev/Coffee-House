@@ -4,7 +4,6 @@
   padding: 10rem;
   display: flex;
   align-items: center;
-  gap: 10rem;
 
   &__social {
     max-width: 53rem;
@@ -19,5 +18,55 @@
   }
 
   &__contacts {
+    width: 53rem;
+    margin-left: auto;
+    color: $color-text-light;
+  }
+  &__contact-list {
+    list-style: none;
+
+    li {
+      margin-bottom: 1.6rem;
+    }
+
+    li:nth-child(1) {
+      max-width: 18.3rem;
+    }
+    li:nth-child(2) {
+      max-width: 17.5rem;
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    a,
+    p {
+      position: relative;
+      display: flex;
+      align-items: start;
+      gap: 0.8rem;
+      text-decoration: none;
+      color: $color-text-light;
+    }
+
+    a::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 2px;
+      background-color: $color-text-light;
+      left: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    a:hover {
+      &::after {
+        opacity: 1;
+        width: 100%;
+      }
+    }
   }
 }

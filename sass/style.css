@@ -220,7 +220,6 @@ body {
   padding: 10rem;
   display: flex;
   align-items: center;
-  gap: 10rem;
 }
 .footer__social {
   max-width: 53rem;
@@ -232,6 +231,52 @@ body {
   display: flex;
   gap: 1.2rem;
 }
+.footer__contacts {
+  width: 53rem;
+  margin-left: auto;
+  color: #e1d4c9;
+}
+.footer__contact-list {
+  list-style: none;
+}
+.footer__contact-list li {
+  margin-bottom: 1.6rem;
+}
+.footer__contact-list li:nth-child(1) {
+  max-width: 18.3rem;
+}
+.footer__contact-list li:nth-child(2) {
+  max-width: 17.5rem;
+}
+.footer__contact-list svg {
+  width: 2rem;
+  height: 2rem;
+}
+.footer__contact-list a,
+.footer__contact-list p {
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: #e1d4c9;
+}
+.footer__contact-list a::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 2px;
+  background-color: #e1d4c9;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.footer__contact-list a:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
 .header {
   display: flex;
   align-items: center;
