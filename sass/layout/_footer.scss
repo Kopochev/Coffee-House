@@ -1,1 +1,23 @@
+.footer {
+  border-radius: 4rem;
+  background-color: $color-background-dark;
+  padding: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
 
+  &__social {
+    max-width: 53rem;
+    .heading-2 {
+      color: $color-text-light;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  &__contacts {
+  }
+}

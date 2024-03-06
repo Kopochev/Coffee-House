@@ -5,3 +5,36 @@ body {
   line-height: 150%;
   color: $color-text-dark;
 }
+
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: $default-font-size;
+  line-height: 150%;
+  color: $color-text-dark;
+}
+
+.heading-1 {
+  font-size: $heading-1-font-size;
+  font-weight: 600;
+  line-height: 105%;
+  &_accent {
+    font-style: italic;
+    color: $color-text-accent;
+  }
+}
+
+.heading-2 {
+  font-size: $heading-2-font-size;
+  font-weight: 600;
+  line-height: 125%;
+  &_accent {
+    font-style: italic;
+    color: $color-text-accent;
+  }
+}
+.heading-3 {
+  font-size: $heading-3-font-size;
+  font-weight: 600;
+  line-height: 125%;
+}

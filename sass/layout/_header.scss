@@ -1,1 +1,61 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &__logo {
+    svg {
+      max-width: 10rem;
+      max-height: 6rem;
+    }
+  }
 
+  &__nav {
+    width: 100%;
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: $color-text-dark;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 2px;
+        background-color: $color-text-dark;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+      }
+      &:hover {
+        &::after {
+          opacity: 1;
+          width: 100%;
+        }
+      }
+    }
+
+    & > li:last-child,
+    & > li:first-child {
+      margin-left: auto;
+    }
+  }
+}

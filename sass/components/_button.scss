@@ -1,0 +1,142 @@
+.btn {
+  display: block;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-border-dark;
+  text-decoration: none;
+  gap: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &__circle-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $color-background;
+  }
+
+  &:hover,
+  &_tab-active {
+    background-color: $color-background-dark;
+    color: $color-text-light;
+  }
+
+  &__img {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all 0.3s;
+  }
+
+  &__text-available {
+    font-size: $font-size-small;
+    line-height: 140%;
+  }
+  // модификации кнопок
+  &_menu {
+    position: relative;
+    max-width: 20rem;
+    max-height: 6.4rem;
+    padding: 2rem;
+    background-color: $color-background;
+    border-color: $color-background;
+    &:hover {
+      background-color: $color-background;
+      color: $color-text-dark;
+    }
+
+    .btn__img,
+    .btn__text {
+      transition: all 0.3s;
+    }
+
+    .btn__img {
+      position: absolute;
+      right: 30%;
+      opacity: 0;
+    }
+
+    &:hover {
+      .btn__text {
+        transform: translateX(-1rem);
+      }
+      .btn__img {
+        opacity: 1;
+      }
+    }
+  }
+
+  &_close {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  &_download {
+    max-width: 20rem;
+    max-height: 6.4rem;
+    padding: 1.2rem;
+
+    .btn__img {
+      width: 3.6rem;
+      height: 3.6rem;
+      color: $color-svg-fill-dark;
+    }
+
+    &:hover {
+      .btn__img {
+        color: $color-svg-fill-light;
+      }
+    }
+  }
+
+  &_social {
+    padding: 1.8rem;
+    background-color: transparent;
+    border-color: $color-border-light;
+    .btn__img {
+      width: 2.4rem;
+      height: 2.4rem;
+      color: $color-svg-fill-light;
+    }
+
+    &:hover {
+      background-color: $color-background;
+      border-color: $color-background;
+      .btn__img {
+        color: $color-svg-fill-dark;
+      }
+    }
+  }
+
+  &_slider {
+    background-color: transparent;
+    padding: 1.8rem;
+    border-radius: 50%;
+
+    .arrow {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.8rem;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &_tab {
+    padding: 0.8rem;
+
+    .btn__text {
+      padding-right: 0.8rem;
+    }
+
+    &:hover {
+      .btn__circle-box {
+        color: $color-text-dark;
+      }
+    }
+  }
+}
