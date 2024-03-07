@@ -1,0 +1,14 @@
+.section-download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text-content {
+    max-width: 63rem;
+  }
+
+  &__group-btn {
+    display: flex;
+    gap: 2rem;
+  }
+}

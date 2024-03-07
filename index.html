@@ -21,10 +21,10 @@
         </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li><a href="#">Favorite coffee</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Mobile app</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#favorite-coffee">Favorite coffee</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#download">Mobile app</a></li>
+            <li><a href="#contact">Contact us</a></li>
             <li>
               <a href="#"
                 ><p>Menu</p>
@@ -37,7 +37,113 @@
         </nav>
       </header>
 
-      <footer class="footer">
+      <main>
+        <section class="section-hero u-margin-bottom-huge">
+          <div class="section-hero__container">
+            <h1 class="heading-1 u-margin-bottom-medium">
+              <span class="heading-1_accent">Enjoy</span> premium coffee at our charming cafe
+            </h1>
+            <p class="section-hero__text u-margin-bottom-medium">
+              With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination
+              for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.
+            </p>
+            <a href="#" class="btn btn_menu">
+              <p class="btn__text">Menu</p>
+              <svg class="btn__img">
+                <use xlink:href="assets/svg/sprite.svg#coffee-cup"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="section-favorite u-margin-bottom-huge" id="favorite-coffee">
+          <h2 class="heading-2 u-center-text">Choose your <span class="heading-2_accent">favorite</span> coffee</h2>
+
+          <div class="slider">
+            <div class="slider__body u-margin-bottom-medium">
+              <button class="btn btn_slider">
+                <span class="arrow">&larr;</span>
+              </button>
+
+              <div class="slider__content">
+                <img src="assets/img/coffee-slider-1.png" alt="coffee-slider" />
+                <h3 class="heading-3">S'mores Frappuccino</h3>
+                <p class="slider__text">
+                  This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat
+                  milk.
+                </p>
+                <p class="heading-3">$5.50</p>
+              </div>
+
+              <button class="btn btn_slider">
+                <span class="arrow">&rarr;</span>
+              </button>
+            </div>
+            <div class="slider__dots">
+              <div class="slider__dot slider__dot_active"></div>
+              <div class="slider__dot"></div>
+              <div class="slider__dot"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-about u-margin-bottom-huge" id="about">
+          <p class="heading-2 u-margin-bottom-medium">
+            Resource is <span class="heading-2_accent">the perfect and cozy place</span> where you can enjoy a variety of hot
+            beverages, relax, catch up with friends, or get some work done.
+          </p>
+          <div class="section-about__gallery">
+            <figure class="section-about__gallery-item section-about__gallery-item_1">
+              <img src="assets/img/about-girl.jpeg" alt="girl with cup coffee" />
+            </figure>
+            <figure class="section-about__gallery-item section-about__gallery-item_2">
+              <img src="assets/img/about-cup.jpeg" alt="lonely one cup" />
+            </figure>
+            <figure class="section-about__gallery-item section-about__gallery-item_3">
+              <img src="assets/img/about-man.jpeg" alt="man with cup" />
+            </figure>
+            <figure class="section-about__gallery-item section-about__gallery-item_4">
+              <img src="assets/img/about-couple.jpeg" alt="couple" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="section-download u-margin-bottom-huge" id="download">
+          <div class="section-download__text-content">
+            <h2 class="heading-2 u-margin-bottom-medium">
+              <span class="heading-2_accent">Download</span> our apps to start ordering
+            </h2>
+            <p class="u-margin-bottom-medium">
+              Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you
+              are
+            </p>
+            <div class="section-download__group-btn">
+              <a href="#" class="btn btn_download">
+                <svg class="btn__img">
+                  <use xlink:href="assets/svg/sprite.svg#apple-icon"></use>
+                </svg>
+                <div class="btn__text-container">
+                  <p class="btn__text-available">Available on the</p>
+                  <p class="btn__text-platform">App Store</p>
+                </div>
+              </a>
+
+              <a href="#" class="btn btn_download">
+                <svg class="btn__img">
+                  <use xlink:href="assets/svg/sprite.svg#google-icon"></use>
+                </svg>
+                <div class="btn__text-container">
+                  <p class="btn__text-available">Available on</p>
+                  <p class="btn__text-platform">Google play</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <img src="assets/img/mobile-screens.png" alt="screen app on mobile" />
+        </section>
+      </main>
+
+      <footer class="footer" id="contact">
         <div class="footer__social">
           <h2 class="heading-2 u-margin-bottom-medium">
             Sip, Savor, Smile. <span class="heading-2_accent">It's coffee time!</span>

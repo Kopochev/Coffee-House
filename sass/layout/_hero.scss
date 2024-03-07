@@ -1,0 +1,10 @@
+.section-hero {
+  border-radius: $border-radius-size;
+  padding: $padding-size-desktop;
+  background-image: url("../../assets/img/img-hero.jpeg");
+  background-size: cover;
+  color: $color-text-light;
+  &__container {
+    max-width: 53rem;
+  }
+}
